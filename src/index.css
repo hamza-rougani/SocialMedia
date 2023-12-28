@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h1,h2,h3,h4,h5,h6,ul,p{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.logor{
+  position: relative;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.cate .logoro{
+  position: relative;
+  width: 20px;
+  
+}
+.f{
+  border-radius: 50%;
+  overflow: hidden;
+}
+header{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+  position: fixed;
+  background-color: #fff;
+}
+.fakeHeader{
+  width: 100%;
+  height: 70px;
+}
+header .ul{
+  display: flex;
+  width: 50%;
+}
+header .ul .mode i{
+font-size: 25px;
+}
+header .ul .li{
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+}
+header .ul .li #btnS{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 9.8px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  background-color: black;
+  color: #fff;
+}
+header .ul .li input{
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #00000077;
+}
+header .ul .search{
+  width: 50%;
+  padding: 10px;
+}
+header .ul2{
+  justify-content: end;
+  padding-right: 10px;
+  box-sizing: border-box;
+  gap: 5px;
+}
+header .ul2 button{
+  cursor: pointer;
+  padding: 9.8px;
+  box-sizing: border-box;
+  color: #fff;
+}
+header .ul2 .join{
+  border: 1px solid #000;
+  background-color: black;
+}
+header .ul2 .reg{
+  border: 1px solid #000;
+  background: none;
+  color: #000;
+}
+.Lnading{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  
+}
+.Lnading .imgs{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; 
+ 
+}
+.Lnading .imgFF{
+  display: flex;
+  position: relative;
+  
+}
+.Lnading .imgs .sumiImg{
+ position: relative;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #000;
+  transform: rotate(20deg);
+  
+}
+.Lnading .imgs .sumiImg:nth-child(1){
+  animation:item1 0.2s linear;
+
+}
+.Lnading .imgs .sumiImg:nth-child(2){
+  animation:item2 0.2s linear;
+
+}
+
+@keyframes item1 {
+  0%{
+    right: 50px;
+  }
+  100%{
+    right: 0px;
+  }
+}
+@keyframes item2 {
+  0%{
+    left:50px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+.Lnading .info{
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 60%;
+box-sizing: border-box;
+padding: 20px 0px;
+}
+.Lnading .info p{
+  width: 80% ;
+  color: #ffffff65;
+}
+.Lnading .info .images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Lnading .info .btns{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Lnading .info .btns button{
+  padding: 10px;
+  cursor: pointer;
+  
+}
+.Lnading .info .btns :nth-child(1){
+  background-color: #fff;
+  color: #000;
+
+}
+.Lnading .info .btns :nth-child(2){
+background: none;
+  border: 1px solid #ffffff;
+  color: #fff;
+
+}
+.Lnading .info .inter{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.Lnading .info .interf{}
+.Lnading .info .images .imgf{
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.GoUp{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0px 0px 3px 3px #ffffff3c;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+ 
+}
+.Posts{
+  width: 60%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.Posts .Post{
+  width: 100%;
+  min-height: 40vh;
+  box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 10px solid #f0efef70;
+  border-radius: 10px;
+}
+.Posts .Post .head{
+box-sizing: border-box;
+padding:20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.Posts .Post .head i{
+  font-size: 20px;
+  cursor: pointer;
+}
+.Posts .Post .content{
+  box-sizing: border-box;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.Posts .Post .content .imgP{
+  width: 100%;
+  height: 70vh;
+}
+.Posts .Post .info{
+  display: flex;
+  flex-direction: column;
+}
+.Posts .Post .info p{
+  opacity: 0.8;
+}
+.Posts .Post .sumi {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.fu{
+  width: 20%;
+  height: 100vh;
+  background-color: #f0efef70;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.fakediv{
+  width: 20%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.users{
+  position: fixed;
+  left: 0;
+}
+.cate{
+  position: fixed;
+  right: 0;
+}
+.usersp h4{
+padding: 10px;
+}
+.usersp .status{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(11, 171, 56);
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.usersp li{
+display: flex;
+align-items: center;
+gap: 10px;
+box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+}
+.usersp li:hover{
+  background-color: #ffffff55;
+ 
+}
+.usersp .lo{
+  position: relative;
+}
+.react{
+  display: flex;
+  justify-content: center;
+
+}
+.react ul{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 17px;
+  /* border: 1px solid #00000067; */
+  box-sizing: border-box;
+  padding:15px 10px;
+  border-radius: 10px;
+}
+.react ul li{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  color: #000000af;
+}
+.Post .show{
+  display: flex;
+  justify-content: end;
+}
+.Post .show button{
+  padding:10px;
+  border: none;
+  background-color: rgb(0, 81, 255);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.conty{
+display: flex;
+background-color: #f7f5f5;
+width: 100%;
+}
+.Sidebar{
+  width: 250px;
+  height: 90vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.Sidebar .logo{
+  border-radius: 50%;
+}
+.Sidebar .headS{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Sidebar .headS span{
+color: #00000077;
+}
+.Sidebar .search{
+position: relative;
+}
+.Sidebar .search input{
+width: 100%;
+padding: 10px 0px 10px 40px;
+box-sizing: border-box;
+background-color: #f6f4ff;
+border: none;
+outline: none;
+}
+.Sidebar .search i{
+position: absolute;
+font-size: 22px;
+top: 5px;
+left: 10px;
+}
+#check{
+  color: #fff;
+  background-color: #685cfe;
+  /* font-weight: bold; */
+  border-radius: 5px;
+}
+.Sidebar ul li{
+padding: 13px;
+display:flex;
+align-items: center;
+gap: 20px;
+font-size: 18px;
+}
+.ContainerDash{
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+}
+.ContainerDash .headerC {
+  display: flex;
+  justify-content: space-between;
+}
+.ContainerDash .headerC button{
+ border: none;
+ padding: 10px;
+ cursor: pointer;
+}
+.ContainerDash .headerC .btns{
+display: flex;
+gap: 10px;
+}
+.ContainerDash .headerC #create{
+  background-color: #685cfe;
+  color: #fff;
+}
+.ContainerDash .headerC #upload{
+  background: none;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.contentDash{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contentDash .contentD{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.contentDash .contentSec{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: relative;
+  height: max-content;
+}
+.contentDash .contentSec textarea{
+ 
+  
+}
+.contentDash .contentSec .imageUp{
+ width: 100%;
+  
+}
+
+.contentDash .contentD .btnP2{
+  background-color: #000;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  float: right;
+  margin: 10px;
+  position: absolute;
+  right: 0;
+ }
+.ContainerDash .contentD #input{
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+ }
+.contentDash .fet{
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  height: 80vh;
+}
+.contS{
+  position: absolute;
+  width: 200px;
+  right: 0;
+  bottom: 0;
+  
+}
+.contentSec .item{
+display: flex;
+align-items: center;
+box-sizing: border-box;
+padding:0px 10px;
+gap: 10px;
+position: relative;
+}
+
+
+.contentDash .contentD .btnPl{
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  float: right;
+  border-radius: 50%;
+
+  
+ }
+ .contentDash .contentD .delete{
+  background-color: red;
+  border: 1px solid red;
+
+ }
+ .contentDash .contentD .style{
+  background-color: #685cfe;
+  border: 1px solid #685cfe;
+
+ }
+ .contentSec .item:hover .btnPl{
+  display: flex;
+ }
+.featurs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width:100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #00000042;
+  background-color: #fff;
+  position: absolute;
+}
+.featurs #in{
+ padding: 4px;
+ border: 1px solid #00000050;
+ outline: none;
+}
+.featurs ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+}
+.featurs ul li{
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  border: 1px solid #00000050;
+  transition: 0.2s;
+}
+.featurs ul li:hover{
+  background-color: #0000000c;
+}
+.contentSec .item .featurs{
+  width: 200px;
+ right: 0;
+  z-index: 9;
+}
+textarea {
+  resize: none; /* Disable manual resizing */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  font-size: 0.8rem;
+
+}
+.contentDash .fs{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.contentDash .upload{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #0000003d;
+}
+.contentDash .upload p{
+  color: #0000006c;
+  font-size: 0.8rem;
+}
+.contentDash .upload label ,.contentDash .upload button {
+  padding: 8px;
+  background-color: #685cfe;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: max-content;
+  font-size: 12px;
+}
+.Link{
+  width: 100%;
+  
+}
+.contentDash .upload input{
+  padding: 10px;
+  border: 1px solid #0000005e;
+  outline: none;
+}
+.fetBtn{
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 20px;
+  right:5px ;
+}
+.fetBtn select{
+  box-sizing: border-box;
+  padding: 7px;
+  border:1px solid #00000077;
+}
